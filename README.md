@@ -19,19 +19,14 @@ For example:
 
 ![Screen Shot 2020-09-09 at 15 54 42](https://user-images.githubusercontent.com/1935696/92607766-daf8e080-f2b4-11ea-9d6d-3bd8501da443.png)
 
-Display an error message if the color hue or luminosity is incorrect:
-
-```
-node index.js urglyColor
-
-This color "urglyColor" doesn't exist
-```
+When the color hue or luminosity are incorrect, a random color will be generated.
 
 TODO:
 
-- [ ] search in library a package to generate random color
-- [ ] figure out how to randomize the color
+- [x] search in library a package to generate random color
+- [x] figure out how to randomize the color
 
-- [ ] get user input
-- [ ] figure out how to print color based on user input
-- [ ] figure out how to print the error message
+- [x] get user input
+- [x] figure out how to print color based on user input
+- [x] print the block 31x9 `#` characters colored with the random color
+  
