@@ -1,6 +1,5 @@
 import { argv } from 'node:process';
-import ansis, { hex } from 'ansis';
-//import chalk from 'chalk';
+import hex from 'ansis';
 import randomColor from 'randomcolor';
 
 let rColor;
