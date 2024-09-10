@@ -18,3 +18,20 @@ In addition to `node index.js`, it should also be able to accept the request for
 For example:
 
 ![Screen Shot 2020-09-09 at 15 54 42](https://user-images.githubusercontent.com/1935696/92607766-daf8e080-f2b4-11ea-9d6d-3bd8501da443.png)
+
+Display an error message if the color hue or luminosity is incorrect:
+
+```
+node index.js urglyColor
+```
+
+This color "urglyColor" doesn't exist
+
+TODO:
+
+- [] figure out how to get a random color, maybe from library
+- [] figure out how to randomize the color
+
+- [] get user input
+- [] figure out how to print color based on user input
+- [] figure out how to print the error message
