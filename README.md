@@ -23,15 +23,15 @@ Display an error message if the color hue or luminosity is incorrect:
 
 ```
 node index.js urglyColor
-```
 
 This color "urglyColor" doesn't exist
+```
 
 TODO:
 
-- [] figure out how to get a random color, maybe from library
-- [] figure out how to randomize the color
+- [ ] search in library a package to generate random color
+- [ ] figure out how to randomize the color
 
-- [] get user input
-- [] figure out how to print color based on user input
-- [] figure out how to print the error message
+- [ ] get user input
+- [ ] figure out how to print color based on user input
+- [ ] figure out how to print the error message
