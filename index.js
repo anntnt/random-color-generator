@@ -1,5 +1,5 @@
 import { argv, exit } from 'node:process';
-import ansis, { hex } from 'ansis';
+import { hex } from 'ansis';
 import randomColor from 'randomcolor';
 
 let rColor;
@@ -43,7 +43,6 @@ if (argv.length < 3) {
   });
 }
 printBlock31x9Char('#', rColor);
-/*console.log(rColor);*/
 
 /* Print a block of 31x9 given characters colored with a given color */
 function printBlock31x9Char(char, color) {
