@@ -17,7 +17,7 @@ jobs:
       - name: Install project dependencies
         run: pnpm install
       - name: Install test dependencies
-        run: pnpm add --save-dev [strip-ansi](https://socket.dev/npm/package/strip-ansi/overview/7.1.0)
+        run: pnpm add --save-dev [strip-ansi]
       - name: Create test file
         # Create a test file that will run index.js from the project
         # with Node.js and check that it roughly matches the
