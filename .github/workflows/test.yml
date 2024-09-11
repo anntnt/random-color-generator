@@ -17,7 +17,7 @@ jobs:
       - name: Install project dependencies
         run: pnpm install
       - name: Install test dependencies
-        run: pnpm add --save-dev [strip-ansi]
+        run: pnpm add --save-dev strip-ansi
       - name: Create test file
         # Create a test file that will run index.js from the project
         # with Node.js and check that it roughly matches the
@@ -45,7 +45,7 @@ jobs:
           cat > test.js <<'END_SCRIPT'
             import { exec } from 'node:child_process';
             import { promisify } from 'node:util';
-            import stripAnsi from '[strip-ansi](https://socket.dev/npm/package/strip-ansi/overview/7.1.0)';
+            import stripAnsi from 'strip-ansi';
 
             const execAsync = promisify(exec);
 
