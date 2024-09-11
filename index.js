@@ -51,12 +51,28 @@ function printBlock31x9Char(char, color) {
   printCharBlock(char, color, 31, 3);
   /* Print a line of 5 given characters colored with this color */
   printCharLine(char, color, 5);
+  /* Print a line of 21 spaces */
+  printCharLine(' ', undefined, 21);
+  /* Print a line of 5 given characters colored with this color */
+  printCharLine(char, color, 5);
+  /* Print a newline */
+  console.log('\n');
+  /* Print a line of 5 given characters colored with this color */
+  printCharLine(char, color, 5);
   /* Print a line of 7 spaces */
   printCharLine(' ', undefined, 7);
   /* Print a hex color code colored with this color */
   printString(color, color);
   /* Print a line of 7 spaces */
   printCharLine(' ', undefined, 7);
+  /* Print a line of 5 given characters colored with this color */
+  printCharLine(char, color, 5);
+  /* Print a newline */
+  console.log('\n');
+  /* Print a line of 5 given characters colored with this color */
+  printCharLine(char, color, 5);
+  /* Print a line of 21 spaces */
+  printCharLine(' ', undefined, 21);
   /* Print a line of 5 given characters colored with this color */
   printCharLine(char, color, 5);
   /* Print a newline */
