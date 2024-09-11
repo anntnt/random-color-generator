@@ -55,7 +55,7 @@ function printBlock31x9Char(char, color) {
   /* Print a line of 5 given characters colored with this color */
   printCharLine(char, color, 5);
   /* Print a newline */
-  console.log('\n');
+  process.stdout.write('\n');
   /* Print a line of 5 given characters colored with this color */
   printCharLine(char, color, 5);
   /* Print a line of 7 spaces */
@@ -67,7 +67,7 @@ function printBlock31x9Char(char, color) {
   /* Print a line of 5 given characters colored with this color */
   printCharLine(char, color, 5);
   /* Print a newline */
-  console.log('\n');
+  process.stdout.write('\n');
   /* Print a line of 5 given characters colored with this color */
   printCharLine(char, color, 5);
   /* Print a line of 21 spaces */
@@ -75,7 +75,7 @@ function printBlock31x9Char(char, color) {
   /* Print a line of 5 given characters colored with this color */
   printCharLine(char, color, 5);
   /* Print a newline */
-  console.log('\n');
+  process.stdout.write('\n');
   /* Print a block of 31x3 given characters colored with this color */
   printCharBlock(char, color, 31, 3);
 }
@@ -91,7 +91,7 @@ function printCharLine(char, color, n) {
 function printCharBlock(char, color, n, m) {
   for (let i = 1; i <= m; i++) {
     printCharLine(char, color, n);
-    console.log('\n');
+    process.stdout.write('\n');
   }
 }
 
