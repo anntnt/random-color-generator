@@ -29,6 +29,6 @@ TODO:
 - [x] get user input
 - [x] figure out how to print color based on user input
 - [x] print the block 31x9 `#` characters colored with the random color
-- [] print an error message out, when the color hue or luminosity are incorrect.
+- [x] print an error message out, when the color hue or luminosity are incorrect.
   hue (eg. green or red or blue)
   luminosity (eg. light or dark)
