@@ -11,32 +11,22 @@ const luminosityArr = ['light', 'dark'];
 if (argv.length < 3) {
   rColor = randomColor();
 } else {
-  if (argv[2]) {
-    hue = argv[2].toLowerCase();
-  }
-  if (argv[3]) {
-    luminosity = argv[3].toLowerCase();
-  }
-  if (
-    hue &&
-    !hueArr.includes(hue) &&
-    luminosity &&
-    !luminosityArr.includes(luminosity)
-  ) {
-    process.stdout.write('Please give a hue of ');
-    console.log(hueArr.join(' or '));
-    process.stdout.write('Please give a luminosity of ');
-    console.log(luminosityArr.join(' or '));
-    exit(1);
-  } else if (hue && !hueArr.includes(hue)) {
-    process.stdout.write('Please give a hue of ');
-    console.log(hueArr.join(' or '));
-    exit(1);
-  } else if (luminosity && !luminosityArr.includes(luminosity)) {
-    process.stdout.write('Please give a luminosity of ');
-    console.log(luminosityArr.join(' or '));
+  hue = argv[2]?.toLowerCase();
+  luminosity = argv[3]?.toLowerCase();
+
+  const invalidHue = hue && !hueArr.includes(hue);
+  const invalidLuminosity = luminosity && !luminosityArr.includes(luminosity);
+
+  if (invalidHue || invalidLuminosity) {
+    if (invalidHue) {
+      console.log(`Please give a hue of ${hueArr.join(' or ')}`);
+    }
+    if (invalidLuminosity) {
+      console.log(`Please give a luminosity of ${luminosityArr.join(' or ')}`);
+    }
     exit(1);
   }
+
   rColor = randomColor({
     luminosity: luminosity,
     hue: hue,
